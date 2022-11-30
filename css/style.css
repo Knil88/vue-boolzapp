@@ -39,8 +39,7 @@ main{
 
 #message-container{
    width: calc(100% - 321px);
-    /* DEBUG */
-    background-color: red;
+   
 
 }
 .user-data {
@@ -48,6 +47,9 @@ main{
     justify-content: space-between;
     background-color: #eaeaea;
     border-right: 1px solid #009688;
+   
+   
+   
   }
 .user-data div{
     display: flex;
@@ -83,8 +85,8 @@ main{
   }
   .name-user .accesso {
     position: absolute;
-    top: 10%;
-    right: 50%;
+    top: 12%;
+    right: 51%;
   }
   .notifiche , .ultimi-messaggi{
   
@@ -132,6 +134,7 @@ main{
   .input-container input{
   width: 100%;
   border: none;
+  outline: none;
    
   }
   .notifiche-nome{
@@ -146,3 +149,31 @@ main{
     font-size: 10px;
     color: #b1b1b1;
   }
+  #message-board {
+    height: calc(500px - 223px);
+    overflow: auto;
+    background-image: url(https://st3.depositphotos.com/10953546/14866/v/450/depositphotos_148660113-stock-illustration-technology-social-media-network-link.jpg);
+    background-size: cover;
+
+  }
+  #console-container {
+    width: 100%;
+    height: 50px;
+    background-color: #f3eeea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #console-container input {
+    width: 670px;
+    margin: 0px 30px;
+    padding: 10px 0px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+  }
+  #console-container i{
+    color: #6b7376;
+    font-size: 18px;
+  }
+  
