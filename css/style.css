@@ -182,30 +182,42 @@ main{
     font-size: 18px;
   }
   .messaggi-utente {
+    margin-left: 10%;
     background-color: #ffffff;
-    padding: 20px;
+    padding: 10px;
     border-radius: 15px;
     margin-top: 20px;
-   
+    width: 28%;
   }
   .colonna{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    width: 100%;
   }
   .miei-messaggi{
-    
+        margin-left: 60%;
         background-color:#d5f9ba;
-        padding: 20px;
+        padding: 10px;
         border-radius: 15px;
         margin-top: 20px;
+        width: 28%;
+        align-items:flex-end ;
+       
         
       
   }
-  #inviati{
-    justify-content: end;
+  .inviati{
+   justify-content: end;
   }
   .flex{
     display: flex;
     justify-content: space-between;
   }
-  
+  .data {
+    font-size: 10px;
+    
+    display: flex;
+    
+    justify-content: end;
+    margin-top: 5px;
+  }
