@@ -22,8 +22,8 @@
                 <div id="user-container">
                     <div class="user-data">
                         <div>
-                            <img src="imgs/avatar_1.jpg" alt="avatar_1"><span class="name-user"><strong>
-                                Gesualdo
+                            <img src="imgs/avatar_io.jpg" alt="avatar_1"><span class="name-user"><strong>
+                                Sofia
                             </strong></span>
                         </div>
                         <div class="icon-container">
@@ -52,10 +52,10 @@
                         <input type="search">
                     </div>
                     <div id="overflow-container">
-                        <div class="notifiche ultimi-messaggi" >
-                            <img src="imgs/avatar_1.jpg" alt="">
+                        <div class="notifiche ultimi-messaggi" v-for="(contact,index) in contacts" >
+                            <img :src="contact[index].image" alt="">
                             <div class="notifiche-messaggi notifiche-nome" >
-                                Michele
+                               Michele
                                 <span class="orario">
                                     12:00
                                </span>
@@ -65,7 +65,7 @@
                                 </div>
                             </div>
                           </div>
-                          <div class="notifiche ultimi-messaggi" >
+                          <!-- <div class="notifiche ultimi-messaggi" >
                             <img src="imgs/avatar_2.jpg" alt="">
                             <div class="notifiche-messaggi notifiche-nome" >
                                 Michele
@@ -103,14 +103,14 @@
                                    
                                 </div>
                             </div>
-                          </div>
+                          </div> -->
                         </div>
                     </div>
                 <div id="message-container">
                     <div class="user-data">
                         <div>
                             <img src="imgs/avatar_1.jpg" alt="avatar_1"><div class="name-user"><strong>
-                                Gesualdo
+                                Michele
                             </strong>
                             <div class="accesso">
                                 Ultimo accesso oggi alle 18:00
