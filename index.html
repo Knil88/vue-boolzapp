@@ -52,10 +52,10 @@
                         <input type="search">
                     </div>
                     <div id="overflow-container">
-                        <div class="notifiche ultimi-messaggi" v-for="(contact,index) in contacts" >
-                            <img :src="contact[index].image" alt="">
+                        <div v-for="contact in contacts" class="notifiche ultimi-messaggi" >
+                            <img src="contact.image" alt="">
                             <div class="notifiche-messaggi notifiche-nome" >
-                               Michele
+                                Michele
                                 <span class="orario">
                                     12:00
                                </span>
