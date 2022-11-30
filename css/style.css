@@ -148,6 +148,7 @@ main{
     margin-left: 170px;
     font-size: 10px;
     color: #b1b1b1;
+    align-self: center;
   }
   #message-board {
     height: calc(500px - 223px);
@@ -202,5 +203,9 @@ main{
   }
   #inviati{
     justify-content: end;
+  }
+  .flex{
+    display: flex;
+    justify-content: space-between;
   }
   

@@ -52,15 +52,17 @@
                         <input type="search">
                     </div>
                     <div id="overflow-container">
-                        <div v-for="contact in contacts" class="notifiche ultimi-messaggi" >
-                            <img src="contact.image" alt="">
-                            <div class="notifiche-messaggi notifiche-nome" >
-                                Michele
-                                <span class="orario">
-                                    12:00
-                               </span>
+                        <div v-for="(contact,index) in contacts" class="notifiche ultimi-messaggi" >
+                            <img :src="contact.image" alt="">
+                            <div class="flex">
+                                <div class="notifiche-messaggi notifiche-nome" >
+                                    {{contact.name}}
+                                     <div class="orario">
+                                         12:00
+                                    </div>
+                            </div>
                                 <div class="ultimi-inviato">
-                                   Ultimo Messaggio inviato
+                                  Ultimo Messaggio inviato
                                    
                                 </div>
                             </div>
