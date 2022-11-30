@@ -154,6 +154,10 @@ main{
     overflow: auto;
     background-image: url(https://st3.depositphotos.com/10953546/14866/v/450/depositphotos_148660113-stock-illustration-technology-social-media-network-link.jpg);
     background-size: cover;
+    justify-content: space-evenly;
+    display: flex;
+    padding-bottom: 10px;
+    
 
   }
   #console-container {
@@ -175,5 +179,28 @@ main{
   #console-container i{
     color: #6b7376;
     font-size: 18px;
+  }
+  .messaggi-utente {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+   
+  }
+  .colonna{
+    display: flex;
+    flex-direction: column;
+  }
+  .miei-messaggi{
+    
+        background-color:#d5f9ba;
+        padding: 20px;
+        border-radius: 15px;
+        margin-top: 20px;
+        
+      
+  }
+  #inviati{
+    justify-content: end;
   }
   
