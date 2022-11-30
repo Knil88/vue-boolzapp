@@ -129,20 +129,23 @@
                     </div>
                     <div id="message-board">
                        <div class="colonna">
-                        <div class="messaggi-utente">
-                            ciao .... bella pe te
+                        <div class="messaggi-utente" v-for="message in contacts[activeUser].messages">
+                            {{message.message}}
+                            <span class="data">
+                                {{message.date}}
+                            </span>
                         </div>
-                        <div class="messaggi-utente">
+                        <!-- <div class="messaggi-utente">
                             ciao .... bella pe te
-                        </div>
+                        </div> -->
                        </div>
                         <div class="colonna" id="inviati">
                             <div class="miei-messaggi">
                                 no no .... bella pe te
                             </div>
-                            <div class="miei-messaggi">
+                            <!-- <div class="miei-messaggi">
                                 no no.... bella pe te
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div id="console-container">
