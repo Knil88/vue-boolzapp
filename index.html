@@ -64,7 +64,7 @@
                                         {{contact.messages[activeChat].message}}
                                    </div>
                                      <div class="orario">
-                                         12:00
+                                        {{contact.messages[activeChat].date}}
                                     </div>
                             </div>
                               
@@ -76,11 +76,11 @@
                 <div id="message-container">
                     <div class="user-data">
                         <div>
-                            <img src="imgs/avatar_1.jpg" alt="avatar_1"><div class="name-user"><strong>
-                                Michele
+                            <img :src="contacts[activeChat].image" alt="avatar_1"><div class="name-user"><strong>
+                                {{contacts[activeChat].name}}
                             </strong>
                             <div class="accesso">
-                                Ultimo accesso oggi alle 18:00
+                               
                             </div>
                           
                         </div>
