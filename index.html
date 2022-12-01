@@ -32,7 +32,7 @@
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                         </div>
                     </div>
-                    <div class="notifiche">
+                    <div class="notifiche" id="bg">
                         <div class="notifiche-container">
                             <i class="fa-solid fa-bell-slash"></i>
                         </div>
@@ -54,7 +54,7 @@
                     <div id="overflow-container">
                         <div   v-for="(contact,index) in contacts"
                          @click="setActiveChat(index)" 
-                         class="notifiche ultimi-messaggi"
+                         class="notifiche "
                          :class="'setActiveChat'=== 'index'  ?  'active' : ''" >
                             <img :src="contact.image" alt="">
                             <div class="flex">

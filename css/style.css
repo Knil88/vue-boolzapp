@@ -94,15 +94,15 @@ main{
     font-size: 13px;
     padding: 10px;
   }
-  .notifiche{
-    background-color: #8edafc;
-    
+  #bg{
+        background-color: #8edafc;
+
   }
   .active {
     background-color: #8edafc;
 }
   .ultimi-messaggi{
-   background-color: white;
+   
   }
  .notifiche-container {
     padding: 10px;
