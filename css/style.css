@@ -57,7 +57,11 @@ main{
 .name-user{
     align-self: center;
 }
-
+.utenti-chat:hover{
+ 
+  background-color: #b1b1b1;
+  cursor: pointer;
+}
 .user-data img {
   max-width: 60px;
     border-radius: 50%;
@@ -105,7 +109,7 @@ main{
     background-color: #8edafc;
 }
   .ultimi-messaggi{
-   
+    color: gray;
   }
  .notifiche-container {
     padding: 10px;
@@ -146,13 +150,16 @@ main{
 
   }
   .ultimi-inviato{
-    font-size: 10px;
-    color: #b1b1b1;
+    font-size: 12px;
+    margin-top: 10px;
+    color: gray;
+    
+    
   }
   .orario {
     margin-left: 170px;
     font-size: 10px;
-    color: #b1b1b1;
+    color: gray;
     align-self: center;
   }
   #message-board {
