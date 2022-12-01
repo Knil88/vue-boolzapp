@@ -183,7 +183,7 @@ createApp({
     },
     methods:{
        
-        setActiveChat(){
+        setActiveChat(index){
             this.activeChat = index;
         }   
            
