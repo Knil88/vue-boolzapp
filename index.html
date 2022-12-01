@@ -61,10 +61,10 @@
                                 <div class="notifiche-messaggi notifiche-nome" >
                                     {{contact.name}}
                                     <div class="ultimi-inviato">
-                                        {{contact.messages[activeChat].message}}
+                                        {{contact.messages[contact.messages.length - 1].message}}
                                    </div>
                                      <div class="orario">
-                                        {{contact.messages[activeChat].date}}
+                                        {{contact.messages[contact.messages.length - 1].date}}
                                     </div>
                             </div>
                               
@@ -80,7 +80,7 @@
                                 {{contacts[activeChat].name}}
                             </strong>
                             <div class="accesso">
-                               
+                               {{contacts[activeChat].messages[length - 1].date}}
                             </div>
                           
                         </div>
