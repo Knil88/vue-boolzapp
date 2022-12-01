@@ -31,7 +31,7 @@ main{
 
 }
 #overflow-container{
-    
+        background-color: white;
         height: calc(500px - 277px);
         overflow: auto;
     
@@ -99,10 +99,10 @@ main{
     
   }
   .active {
-  background-color: grey;
+    background-color: #8edafc;
 }
   .ultimi-messaggi{
-    background-color: white;
+   background-color: white;
   }
  .notifiche-container {
     padding: 10px;

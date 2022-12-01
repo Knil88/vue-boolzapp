@@ -52,17 +52,18 @@
                         <input type="search">
                     </div>
                     <div id="overflow-container">
-                        <div   >
-                           <div  v-for="(contact,index) in contacts" @click="setActiveChat(activeChat)" class="notifiche ultimi-messaggi":class="'activeChat'=== 'index'  ?  'active' : ''">
-                                <img :src="contact.image" alt="">
-                                <div class="flex">
-                                    <div class="notifiche-messaggi notifiche-nome" >
-                                        {{contact.name}}
-                                        <div class="orario">
-                                            12:00
-                                        </div>
-                                </div>
-                           </div>
+                        <div   v-for="(contact,index) in contacts"
+                         @click="setActiveChat(index)" 
+                         class="notifiche ultimi-messaggi"
+                         :class="'setActiveChat'=== 'index'  ?  'active' : ''" >
+                            <img :src="contact.image" alt="">
+                            <div class="flex">
+                                <div class="notifiche-messaggi notifiche-nome" >
+                                    {{contact.name}}
+                                     <div class="orario">
+                                         12:00
+                                    </div>
+                            </div>
                                
                             </div>
                           </div>
