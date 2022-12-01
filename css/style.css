@@ -26,8 +26,11 @@ main{
     left: 10%;
   }
 #user-container{
-    width: 321px;
+    width: 30%;
    
+
+}
+.name-date{
 
 }
 #overflow-container{
@@ -38,7 +41,7 @@ main{
 }
 
 #message-container{
-   width: calc(100% - 321px);
+   width: 70%;
    
 
 }
@@ -93,7 +96,7 @@ main{
   .name-user .accesso {
     position: absolute;
     top: 12%;
-    right: 51%;
+    right: 55%;
   }
   .notifiche , .ultimi-messaggi , .utenti-chat{
   

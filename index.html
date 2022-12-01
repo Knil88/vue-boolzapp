@@ -75,12 +75,13 @@
                     </div>
                 <div id="message-container">
                     <div class="user-data">
-                        <div>
-                            <img :src="contacts[activeChat].image" alt="avatar_1"><div class="name-user"><strong>
+                        <div class="name-date">
+                            <img :src="contacts[activeChat].image" alt="avatar_1">
+                            <div class="name-user"><strong>
                                 {{contacts[activeChat].name}}
                             </strong>
                             <div class="accesso">
-                                {{contact.messages[contact.messages.length - 1].date}}
+                                {{contacts[activeChat].messages[contacts[activeChat].messages.length - 1].date}}
                             </div>
                           
                         </div>
