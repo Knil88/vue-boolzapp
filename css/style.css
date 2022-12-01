@@ -77,6 +77,9 @@ main{
   .icon-container i {
     padding: 0px 5px;
   }
+  i{
+    cursor: pointer;
+  }
   .accesso {
     font-size: 10px;
     color: #b1b1b1;
@@ -88,7 +91,7 @@ main{
     top: 12%;
     right: 51%;
   }
-  .notifiche , .ultimi-messaggi{
+  .notifiche , .ultimi-messaggi , .utenti-chat{
   
     display: flex;
     font-size: 13px;
@@ -124,7 +127,7 @@ main{
   .input-container i {
     color: #b1b1b1;
   }
-  .notifiche img {
+  .notifiche img ,.utenti-chat img{
     max-width: 45px;
     border-radius: 50%;
     margin: 0px 0px;

@@ -32,7 +32,7 @@
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                         </div>
                     </div>
-                    <div class="notifiche" id="bg">
+                    <div class="notifiche">
                         <div class="notifiche-container">
                             <i class="fa-solid fa-bell-slash"></i>
                         </div>
@@ -53,9 +53,9 @@
                     </div>
                     <div id="overflow-container">
                         <div   v-for="(contact,index) in contacts"
-                         @click="setActiveChat(index)" 
-                         class="notifiche "
-                         :class="'setActiveChat'=== 'index'  ?  'active' : ''" >
+                         @click="setActiveChat(index)"
+                          class="utenti-chat"
+                          :class="activeChat === 'index'  ?  'active' : ''" >
                             <img :src="contact.image" alt="">
                             <div class="flex">
                                 <div class="notifiche-messaggi notifiche-nome" >
@@ -67,45 +67,7 @@
                                
                             </div>
                           </div>
-                          <!-- <div class="notifiche ultimi-messaggi" >
-                            <img src="imgs/avatar_2.jpg" alt="">
-                            <div class="notifiche-messaggi notifiche-nome" >
-                                Michele
-                                <span class="orario">
-                                    12:00
-                               </span>
-                                <div class="ultimi-inviato">
-                                   Ultimo Messaggio inviato
-                                   
-                                </div>
-                            </div>
-                          </div>
-                          <div class="notifiche ultimi-messaggi" >
-                            <img src="imgs/avatar_3.jpg" alt="">
-                            <div class="notifiche-messaggi notifiche-nome" >
-                                Michele
-                                <span class="orario">
-                                    12:00
-                               </span>
-                                <div class="ultimi-inviato">
-                                   Ultimo Messaggio inviato
-                                   
-                                </div>
-                            </div>
-                          </div>
-                          <div class="notifiche ultimi-messaggi" >
-                            <img src="imgs/avatar_4.jpg" alt="">
-                            <div class="notifiche-messaggi notifiche-nome" >
-                                Michele
-                                <span class="orario">
-                                    12:00
-                               </span>
-                                <div class="ultimi-inviato">
-                                   Ultimo Messaggio inviato
-                                   
-                                </div>
-                            </div>
-                          </div> -->
+                          
                         </div>
                     </div>
                 <div id="message-container">
@@ -129,7 +91,8 @@
                     </div>
                     <div id="message-board">
                        <div class="colonna ">
-                        <div  v-for="message in contacts[activeUser].messages" :class="message.status === 'sent'  ?  'messaggi-utente':'miei-messaggi'" >
+                        <div  v-for="message in contacts[activeChat].messages" 
+                        :class="message.status === 'sent'  ?  'miei-messaggi':'messaggi-utente'" >
                             {{message.message}}
                             <div class="data">
                                 {{message.date}}
@@ -147,8 +110,8 @@
                     </div>
                     <div id="console-container">
                         <div><i class="fa-regular fa-face-smile"></i></div>
-                        <div><input type="text"></div>
-                        <div><i class="fa-solid fa-microphone"></i></div>
+                        <div><input type="text" v-model="newMessage" @keyup.enter="addMessage"></div>
+                        <div><i class="fa-solid fa-microphone" @click="addMessage"></i></div>
                     </div>
                     </div>
                    

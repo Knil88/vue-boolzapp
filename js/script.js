@@ -2,7 +2,7 @@ const {createApp} = Vue;
 createApp({
     data(){
         return{
-            activeUser : 0,
+            newMessage:"",
             activeChat : 0,
             contacts: [
                 {
@@ -181,12 +181,33 @@ createApp({
         
         
     },
-    methods:{
-       
-        setActiveChat(index){
-            this.activeChat = index;
+    methods: 
+    {
+        setActiveChat(index) {
+            this.activeChat = index
             
-        }   
-           
-    }
-}).mount("#app")
+        },
+        addMessage() {
+            this.contacts[this.activeChat].messages.push({
+                date: '10/01/2020 15:50:00',
+                message: this.newMessage,
+                status: 'sent'   
+            });
+            this.newMessage = ""
+
+            setTimeout(this.respMessage, 2000)
+        },
+        respMessage() {
+            this.contacts[this.activeChat].messages.push({
+                date: '10/01/2020 15:51:00',
+                    message: 'Ok',
+                    status: 'received' 
+            });
+        }
+    },
+    mounted() { 
+        
+    },
+
+        
+}).mount("#app") 
