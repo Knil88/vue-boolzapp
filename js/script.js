@@ -184,7 +184,7 @@ createApp({
     methods: 
     {
         setActiveChat(index) {
-            this.activeChat = index
+            this.activeChat = index;
             
         },
         addMessage() {
