@@ -3,6 +3,7 @@ createApp({
     data(){
         return{
             activeUser : 0,
+            activeChat : 0,
             contacts: [
                 {
                     name: 'Michele',
@@ -182,7 +183,9 @@ createApp({
     },
     methods:{
        
-           
+        setActiveChat(){
+            this.activeChat = index;
+        }   
            
     }
 }).mount("#app")

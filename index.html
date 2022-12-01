@@ -52,7 +52,7 @@
                         <input type="search">
                     </div>
                     <div id="overflow-container">
-                        <div v-for="(contact,index) in contacts" class="notifiche ultimi-messaggi" >
+                        <div  @click="setActiveChat(index)" v-for="(contact,index) in contacts" class="notifiche ultimi-messaggi":class="'index'=== 'activeChat'  ? : 'active'" >
                             <img :src="contact.image" alt="">
                             <div class="flex">
                                 <div class="notifiche-messaggi notifiche-nome" >
@@ -126,7 +126,7 @@
                     </div>
                     <div id="message-board">
                        <div class="colonna ">
-                        <div  v-for="message in contacts[activeUser].messages" :class="message.status === 'received'  ?  'messaggi-utente':'miei-messaggi'" >
+                        <div  v-for="message in contacts[activeUser].messages" :class="message.status === 'sent'  ?  'messaggi-utente':'miei-messaggi'" >
                             {{message.message}}
                             <div class="data">
                                 {{message.date}}

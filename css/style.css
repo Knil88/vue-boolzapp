@@ -98,7 +98,9 @@ main{
     background-color: #8edafc;
     
   }
-
+  .active {
+  background-color: grey;
+}
   .ultimi-messaggi{
     background-color: white;
   }
@@ -191,7 +193,7 @@ main{
   }
   .colonna{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     width: 100%;
   }
   .miei-messaggi{
