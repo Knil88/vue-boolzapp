@@ -49,13 +49,12 @@
                        <div>
                         <i class="fa-solid fa-magnifying-glass"></i>
                        </div>
-                       <input v-model="searchQuery" @keyup= search(activeChat) type="text" placeholder="Cerca o inizia nuova chat">
+                       <input v-model="searchQuery" @keyup.enter= "search(activeChat)" type="text" placeholder="Cerca o inizia nuova chat">
                     </div>
                     <div id="overflow-container">
                         <div   v-for="(contact,index) in contacts"
                          @click="setActiveChat(index)"
                           class="utenti-chat"
-                          v-if="search(index)"
                           :class="activeChat === 'index'  ?  'active' : ''" >
                             <img :src="contact.image" alt="">
                             <div class="flex">

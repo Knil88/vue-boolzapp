@@ -204,10 +204,7 @@ createApp({
                     message: 'Ok',
                     status: 'received' 
             });
-        }
-    },
-   
-        
+        },
         search(index){
             nome = this.contacts[index].name.toLowerCase(); 
 
@@ -219,6 +216,10 @@ createApp({
             
 
         },
+    },
+   
+        
+      
 
     
 
