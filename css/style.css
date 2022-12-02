@@ -13,7 +13,7 @@ header{
 main{
     background-color: #dcdbd1;
     height: calc(100% - 150px);
-    
+
 }
 #container-wrapp {
     width: 80%;
@@ -27,7 +27,7 @@ main{
   }
 #user-container{
     width: 30%;
-   
+
 
 }
 .name-date{
@@ -37,12 +37,12 @@ main{
         background-color: white;
         height: calc(500px - 277px);
         overflow: auto;
-    
+
 }
 
 #message-container{
    width: 70%;
-   
+
 
 }
 .user-data {
@@ -50,9 +50,9 @@ main{
     justify-content: space-between;
     background-color: #eaeaea;
     border-right: 1px solid #009688;
-   
-   
-   
+
+
+
   }
 .user-data div{
     display: flex;
@@ -61,7 +61,7 @@ main{
     align-self: center;
 }
 .utenti-chat:hover{
- 
+
   background-color: #b1b1b1;
   cursor: pointer;
 }
@@ -73,8 +73,8 @@ main{
       padding-right: 5px;
       padding-bottom: 10px;
       padding-left: 5px;
-    
-    
+
+
   }
   .icon-container {
     color: #b1b1b1;
@@ -90,8 +90,8 @@ main{
   .accesso {
     font-size: 10px;
     color: #b1b1b1;
-   
-    
+
+
   }
   .name-user .accesso {
     position: absolute;
@@ -99,7 +99,7 @@ main{
     right: 55%;
   }
   .notifiche , .ultimi-messaggi , .utenti-chat{
-  
+
     display: flex;
     font-size: 13px;
     padding: 10px;
@@ -147,7 +147,7 @@ main{
   width: 100%;
   border: none;
   outline: none;
-   
+
   }
   .notifiche-nome{
 
@@ -156,8 +156,8 @@ main{
     font-size: 10px;
     margin-top: 10px;
     color: gray;
-    
-    
+
+
   }
   .orario {
     margin-left: 170px;
@@ -173,7 +173,7 @@ main{
     justify-content: space-evenly;
     display: flex;
     padding-bottom: 10px;
-    
+
 
   }
   #console-container {
@@ -217,9 +217,9 @@ main{
         margin-top: 20px;
         width: 28%;
         align-items:flex-end ;
-       
-        
-      
+
+
+
   }
   .inviati{
    justify-content: end;
@@ -230,9 +230,9 @@ main{
   }
   .data {
     font-size: 10px;
-    
+
     display: flex;
-    
+
     justify-content: end;
     margin-top: 5px;
   }

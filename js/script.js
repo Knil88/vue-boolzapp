@@ -2,6 +2,7 @@ const {createApp} = Vue;
 createApp({
     data(){
         return{
+            searchQuery: '',
             newMessage:"",
             activeChat : 0,
             contacts: [
@@ -205,9 +206,25 @@ createApp({
             });
         }
     },
+   
+        
+        search(index){
+            nome = this.contacts[index].name.toLowerCase(); 
+
+            if(nome.includes(this.searchQuery)) {
+                return true;            
+            }else{
+                return false;
+            }
+            
+
+        },
+
+    
+
+    
     mounted() { 
         
     },
 
-        
 }).mount("#app") 

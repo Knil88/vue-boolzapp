@@ -49,12 +49,13 @@
                        <div>
                         <i class="fa-solid fa-magnifying-glass"></i>
                        </div>
-                        <input type="search">
+                       <input v-model="searchQuery" @keyup= search(activeChat) type="text" placeholder="Cerca o inizia nuova chat">
                     </div>
                     <div id="overflow-container">
                         <div   v-for="(contact,index) in contacts"
                          @click="setActiveChat(index)"
                           class="utenti-chat"
+                          v-if="search(index)"
                           :class="activeChat === 'index'  ?  'active' : ''" >
                             <img :src="contact.image" alt="">
                             <div class="flex">
@@ -77,14 +78,16 @@
                     <div class="user-data">
                         <div class="name-date">
                             <img :src="contacts[activeChat].image" alt="avatar_1">
-                            <div class="name-user"><strong>
-                                {{contacts[activeChat].name}}
-                            </strong>
-                            <div class="accesso">
-                                {{contacts[activeChat].messages[contacts[activeChat].messages.length - 1].date}}
-                            </div>
+                            
+                                <div class="name-user">
+                                  {{contacts[activeChat].name}}
+                            
+                                  <div class="accesso">
+                                    {{contacts[activeChat].messages[contacts[activeChat].messages.length - 1].date}}
+                                  </div>
                           
-                        </div>
+                            
+                                 </div>
                             
                         </div>
                         <div class="icon-container">
@@ -102,15 +105,8 @@
                                 {{message.date}}
                             </div>
                         </div>
-                        <!-- <div class="messaggi-utente">
-                            ciao .... bella pe te
-                        </div> -->
                        
-                        
-                            <!-- <div class="miei-messaggi">
-                                no no.... bella pe te
-                            </div> -->
-                        </div>
+                     </div>
                     </div>
                     <div id="console-container">
                         <div><i class="fa-regular fa-face-smile"></i></div>
